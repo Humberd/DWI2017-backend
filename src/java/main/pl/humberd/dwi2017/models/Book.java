@@ -3,12 +3,15 @@ package pl.humberd.dwi2017.models;
 public class Book {
     private String bookId;
     private String title;
-    private String authorId;
+    private String author;
 
-    public Book(String bookId, String title, String authorId) {
+    public Book() {
+    }
+
+    public Book(String bookId, String title, String author) {
         this.bookId = bookId;
         this.title = title;
-        this.authorId = authorId;
+        this.author = author;
     }
 
     public String getBookId() {
@@ -29,12 +32,12 @@ public class Book {
         return this;
     }
 
-    public String getAuthorId() {
-        return authorId;
+    public String getAuthor() {
+        return author;
     }
 
-    public Book setAuthorId(String authorId) {
-        this.authorId = authorId;
+    public Book setAuthor(String author) {
+        this.author = author;
         return this;
     }
 }
